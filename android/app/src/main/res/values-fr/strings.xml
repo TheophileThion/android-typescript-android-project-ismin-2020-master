@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Films</string>
+    <string name="add_a_book">Ajouter un livre</string>
+    <string name="date_added">Date</string>
+    <string name="sauvegarder">Sauvegarder</string>
+    <string name="authors">Auteurs</string>
+    <string name="casting">Casting</string>
+    <string name="cover">Affiche</string>
+    <string name="link">Lien</string>
+    <string name="delete">Supprimer</string>
+    <string name="about">A propos</string>
+    <string name="add_a_film">Ajouter un film</string>
+    <string name="title">Titre</string>
+    <string name="url">Url de l\'affiche</string>
+    <string name="summary">Résumé</string>
+    <string name="rating">Note (/100)</string>
+    <string name="genres">Genres (Séparé par ",")</string>
+    <string name="keywords">Keywords (Séparé par ",")</string>
+    <string name="date_released">Date de sortie</string>
+    <string name="runtime">Durée</string>
+    <string name="members">Membre</string>
+    <string name="size">Taille</string>
+    <string name="Tab1">Accueil</string>
+    <string name="Tab2">Favoris</string>
+</resources>

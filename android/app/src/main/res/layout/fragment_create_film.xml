@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/f_create_film_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/f_create_film_black_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BB000000" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/f_create_film_card"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/backgroundSecondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/filmBackground"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/filmBackground"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/add_a_film"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_author"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/authors"
+                        android:text="auteur"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_summary" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/title"
+                        android:text="Titre"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_date_added"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/date_added"
+                        android:text="2020-04-05"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_size" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/url"
+                        android:text="url"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_title" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/summary"
+                        android:text="Summary"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_rating" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/rating"
+                        android:text="13"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_url" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_casting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/casting"
+                        android:text="mec1, casting2, lesautres"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_author" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_genre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/genres"
+                        android:text="Explosions, genres, action"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_casting" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_keywords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/keywords"
+                        android:text="keywords, boom, ettout"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_genre" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_released_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/date_released"
+                        android:text="2020-04-04"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_keywords" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_runtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/runtime"
+                        android:text="60"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_released_date" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/cover"
+                        android:text="https://scontent.fcdg3-1.fna.fbcdn.net/v/t1.0-9/64712690_1307981159360783_2848039551811715072_o.jpg?_nc_cat=100&amp;ccb=2&amp;_nc_sid=09cbfe&amp;_nc_ohc=B1YLIdc0MV0AX9HsYwY&amp;_nc_ht=scontent.fcdg3-1.fna&amp;oh=bfee7fc100dd43f182aa7dcc5f101474&amp;oe=5FEBA231"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_runtime" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_members"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/members"
+                        android:text="03"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_cover" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/f_create_film_edt_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:hint="@string/size"
+                        android:text="56"
+                        android:textColor="@color/textPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_members" />
+
+                    <Button
+                        android:id="@+id/f_create_film_btn_save"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/sauvegarder"
+                        android:textColor="@color/backgroundPrimary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/f_create_film_edt_date_added" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
